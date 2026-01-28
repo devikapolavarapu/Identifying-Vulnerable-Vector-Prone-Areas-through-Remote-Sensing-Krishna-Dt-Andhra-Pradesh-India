@@ -1,6 +1,8 @@
 # Identifying Vulnerable Vector-Prone Areas through Remote Sensing  
 ## Krishna District, Andhra Pradesh, India
 
+---
+
 ## Abstract
 Vector-borne diseases such as dengue and chikungunya pose significant public health challenges in tropical regions. This research presents a **Remote Sensing (RS) and Geographic Information System (GIS)–based spatial framework** to identify **vulnerable mosquito vector-prone areas** in **Krishna District, Andhra Pradesh, India**. Multi-temporal **Landsat-8 satellite imagery** was integrated with environmental, climatic, population, and health-related datasets to generate a **district-level risk zonation map**. The framework supports early risk identification and enables data-driven public health planning by minimizing dependence on manual field surveys.
 
@@ -19,15 +21,19 @@ Advancements in satellite remote sensing and GIS provide an effective platform f
 ---
 
 ## 2. Study Area
+
+<p align="center">
+  <img src="images/Krishna-map-labeled.png" width="650">
+  <br>
+  <em>Figure 1. Geographic location of Krishna District within Andhra Pradesh and India.</em>
+</p>
+
 **Krishna District**, located in the coastal region of **Andhra Pradesh, India**, is characterized by:
 - Tropical climatic conditions  
 - Dense population settlements  
 - Extensive irrigation and water-logged agricultural areas  
 
 These factors collectively increase susceptibility to mosquito vector proliferation.
-## Study Area
-
-
 
 ---
 
@@ -52,19 +58,85 @@ These factors collectively increase susceptibility to mosquito vector proliferat
 ### 5.1 Satellite Data Processing
 Landsat-8 imagery was pre-processed and analyzed using **ArcGIS** to extract relevant environmental parameters.
 
+---
+
 ### 5.2 Derivation of Environmental Indices
-The following indices were computed:
-- **NDWI (Normalized Difference Water Index):** Detection of surface water and water-logged areas  
-- **NDMI (Normalized Difference Moisture Index):** Identification of moisture persistence  
-- **NDVI (Normalized Difference Vegetation Index):** Assessment of vegetation density  
-- **Land Surface Temperature (LST):** Evaluation of temperature suitability for mosquito survival  
+
+#### Elevation
+
+<p align="center">
+  <img src="images/ELEVATION.jpg" width="650">
+  <br>
+  <em>Figure 2. Elevation distribution of Krishna District.</em>
+</p>
+
+Low-lying and deltaic regions were identified as highly susceptible to surface water accumulation.
+
+---
+
+#### Land Surface Temperature (LST)
+
+<p align="center">
+  <img src="images/LST.jpg" width="650">
+  <br>
+  <em>Figure 3. Land Surface Temperature (LST) indicating optimal thermal ranges for mosquito breeding.</em>
+</p>
+
+Temperature ranges between **23–29 °C** were found to be favorable for mosquito survival.
+
+---
+
+#### Normalized Difference Vegetation Index (NDVI)
+
+<p align="center">
+  <img src="images/NDVI.jpg" width="650">
+  <br>
+  <em>Figure 4. NDVI showing vegetation density across Krishna District.</em>
+</p>
+
+High vegetation density provides shaded and humid microhabitats suitable for mosquito resting and breeding.
+
+---
+
+#### Normalized Difference Water Index (NDWI)
+
+<p align="center">
+  <img src="images/NDWI.jpg" width="650">
+  <br>
+  <em>Figure 5. NDWI highlighting surface water and water-logged regions.</em>
+</p>
+
+Persistent surface water bodies were identified as major contributors to vector proliferation.
+
+---
+
+#### Normalized Difference Moisture Index (NDMI)
+
+<p align="center">
+  <img src="images/NDMI.jpg" width="650">
+  <br>
+  <em>Figure 6. NDMI depicting spatial distribution of surface and sub-surface moisture.</em>
+</p>
+
+Moisture-rich regions were strongly associated with increased vector habitat suitability.
+
+---
 
 ### 5.3 Spatial Risk Modeling
 - All thematic layers were normalized  
 - Weights were assigned based on vector-breeding relevance  
 - A **weighted overlay analysis** was performed to compute a composite risk index  
 
+---
+
 ### 5.4 Risk Zonation
+
+<p align="center">
+  <img src="images/final map.jpg" width="650">
+  <br>
+  <em>Figure 7. Final vector-borne disease risk zonation map of Krishna District.</em>
+</p>
+
 The final risk map categorizes Krishna District into:
 - High vulnerability zones  
 - Medium vulnerability zones  
@@ -74,6 +146,7 @@ The final risk map categorizes Krishna District into:
 
 ## 6. Results and Discussion
 The resulting risk zonation map highlights regions with persistent surface water, dense vegetation, high moisture content, and optimal temperature ranges as high-risk zones. The spatial patterns observed align with known environmental conditions favorable for mosquito breeding, validating the effectiveness of the RS–GIS approach.
+
 
 ---
 
@@ -118,3 +191,6 @@ This study demonstrates the effectiveness of integrating Remote Sensing and GIS 
 
 ## 12. License
 This project is intended for academic and research purposes.
+
+---
+
